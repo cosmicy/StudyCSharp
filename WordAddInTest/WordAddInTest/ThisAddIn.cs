@@ -6,6 +6,7 @@ using System.Xml.Linq;
 using Word = Microsoft.Office.Interop.Word;
 using Office = Microsoft.Office.Core;
 using Microsoft.Office.Tools.Word;
+using System.Windows.Forms;
 
 namespace WordAddInTest
 {
@@ -13,6 +14,8 @@ namespace WordAddInTest
     {
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
+            string str = "hello word";
+            MessageBox.Show(str);
         }
 
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)
